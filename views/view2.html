@@ -1,0 +1,25 @@
+<div> <!-- ng-controller="SimpleController" -->
+		  Search: <br>
+		  <form name="myForm">
+		      <input type ="email" ng-model="myText" name="myText"/>My counter is {{counter}} 
+          </form>
+             <p>The input's valid state is: <span><b>{{myForm.myText.$pristine
+
+             }}</b></span></p>
+             
+
+           <ul>
+		     <li ng-repeat="custName in customers">
+		       {{custName.name}}-{{custName.city}}
+
+		     </li>
+		   </ul>
+		    Emitted Message is : {{emittedMessage}}
+		 
+		 <div ng-controller="ControllerView3">
+		 	Message is : {{msg}}
+
+		 </div>  
+	    <a href="#/view3">laxmi</a>
+</div>
+	    
