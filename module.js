@@ -1,6 +1,6 @@
 //defining all the modules here 
 
-var firstApp = angular.module('firstApp',['firebase']);
+var firstApp = angular.module('firstApp',['ngRoute']);
 
 
 firstApp.config(function ($routeProvider){
