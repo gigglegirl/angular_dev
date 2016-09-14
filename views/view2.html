@@ -1,0 +1,38 @@
+
+<form  name="detailsForm">
+
+<!-- Navbar Menu -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">Home</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="#">Form</a></li>
+		      <li><a href="#/view3">Table</a></li>
+
+		    </ul>
+    </div>
+</nav>
+
+  <div class = container>
+    <div ng-controller="SimpleController" class=row> 
+        <div class="col-md-5">
+		    <p>First Name:</p>
+		        <input type ="text" ng-model="formData.firstName" name="fname"/>         
+		    <p>Last Name:</p>
+		        <input type ="text" ng-model="formData.lastName" name="lname"/>
+		    <p>Email:</p>
+		        <input type ="email" ng-model="formData.emailAddress" name="eaddress"/>  
+            <button ng-click="onSubmit()" >Submit</button>
+	<br><br>
+
+		    <pre>{{formData | json}}</pre> 
+		    <!-- <validation-Directive></validation-Directive> -->
+
+		  
+        </div>
+     </div>
+    </div>
+</form>
+	    
