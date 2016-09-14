@@ -3,12 +3,7 @@
 firstApp.controller("SimpleController",function ($scope,$rootScope,simpleFactory,$http){
 	$scope.customers = simpleFactory.getCustomers(); //coming data from factory
 	 $scope.counter = 0;
-	
-       /* const ref = new Firebase("https://angular-basic-app.firebaseio.com");
-        
-        ref.set("Hello London");*/
-        // download the data into a local object
-        //$scope.data = $firebaseObject(ref);
+	 
       $scope.formData={};
 	   $scope.onSubmit=function(){
 	   	console.log($scope.formData);
