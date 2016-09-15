@@ -1,0 +1,15 @@
+<div ng-controller="ControllerView3">
+		  Search: <br>
+		 <input type ="text" ng-model="name"/>{{name}}
+           <ul>
+		     <li ng-repeat="siblingName in siblings">
+		       {{siblingName.name}}-{{siblingName.city}}
+		     </li>
+		   </ul>
+</div>
+	   
+	   <div ng-controller="modelViewBinding">
+		  Search: <br>
+		 <input type ="text" ng-model="data.name"/>{{data | json}}
+       </div>
+	   
