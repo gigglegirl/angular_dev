@@ -28,12 +28,6 @@ firstApp.factory('factory3', function(){
 })
 
 
-firstApp.factory('modelViewFactory', function(){
-	var data  =
-		 {name:'sanju',city:'bhopal'}
-	return data;
-})
-
 
 
 
