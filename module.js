@@ -9,13 +9,15 @@ firstApp.config(function ($routeProvider){
 	             templateUrl :'views/view2.html'
 	            
 	            })
-	        .when('/view3',{
-	             templateUrl :'views/view3.html',
-	             controller:'ControllerView3'
-	            
-	            })
 	        .otherwise({redirectTo : '/' });
 	        
+})
+
+firstApp.directive("customDirective",function(){
+	return {
+		templateUrl: 'customDirectiveTemplate.html',
+		restrict: 'EA'
+	}
 })
 
 

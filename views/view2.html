@@ -7,16 +7,11 @@
 		    <div class="navbar-header">
 		      <a class="navbar-brand" href="#">Home</a>
 		    </div>
-		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="#">Form</a></li>
-		      <li><a href="#/view3">Table</a></li>
-
-		    </ul>
     </div>
 </nav>
 
   <div class = container>
-    <div ng-controller="SimpleController" class=row> 
+    <div ng-controller="SimpleController" class=row>
         <div class="col-md-5">
 		    <p>First Name:</p>
 		        <input type ="text" ng-model="formData.firstName" name="fname"/>         
@@ -28,9 +23,11 @@
 	<br><br>
 
 		    <pre>{{formData | json}}</pre> 
+		    <custom-directive></custom-directive>
 		  
         </div>
      </div>
     </div>
+
 </form>
 	    

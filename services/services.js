@@ -14,20 +14,6 @@ firstApp.factory('simpleFactory', function(){
 });
 
 
-firstApp.factory('factory3', function(){
-	var siblings  =[
-		 {name:'sanju',city:'bhopal'},
-		 {name:'ramya',city:'bangalore'}];
-
-	var factory={};
-	factory.getSiblings = function(){
-
-		return siblings;
-	}
-	return factory;
-})
-
-
 
 
 
